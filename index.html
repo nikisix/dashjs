@@ -89,9 +89,7 @@ rect:hover {  fill:blue; }
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <div id="tooltip"></div><!-- div to hold tooltip. -->
 <svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
-<script src="uStates.js"></script> <!-- creates uStates. -->
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="us_script.js"></script>
 <script src="dash_script.js"></script>
 
 <!--pie and hist info-->
@@ -110,7 +108,6 @@ var freqData=[
 ,{State:'MO',freq:{low:262, mid:479, high:571}}
 ];
 
-dashboard('#dashboard',freqData);
+var dash_caller = dashboard('#dashboard',freqData);
 </script>
-
 </body>
